@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SuperHero Burgers</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+</style>
+</head>
+<body class="bg-blue-50 text-gray-800">
+
+<nav class="bg-blue-800 text-white shadow-md">
+<div class="container mx-auto px-6 py-4 flex justify-between items-center">
+<h1 class="text-2xl font-bold">🦸 SuperHero Burgers</h1>
+<button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none">&#9776;</button>
+<ul id="menu" class="hidden md:flex gap-6 font-medium">
+<li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+<li><a href="#features" class="hover:text-yellow-300">Powers</a></li>
+<li><a href="#menu-section" class="hover:text-yellow-300">Menu</a></li>
+<li><a href="#reviews" class="hover:text-yellow-300">Testimonials</a></li>
+<li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+</ul>
+</div>
+<div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+<ul class="flex flex-col gap-3 font-medium">
+<li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+<li><a href="#features" class="hover:text-yellow-300">Powers</a></li>
+<li><a href="#menu-section" class="hover:text-yellow-300">Menu</a></li>
+<li><a href="#reviews" class="hover:text-yellow-300">Testimonials</a></li>
+<li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+</ul>
+</div>
+</nav>
+
+<section id="home" class="text-center py-20 bg-gradient-to-b from-blue-700 to-yellow-400 text-white">
+<div class="container mx-auto px-4">
+<h2 class="text-4xl sm:text-5xl font-extrabold mb-4">Welcome to SuperHero Burgers</h2>
+<p class="text-xl sm:text-2xl italic mb-6">"With great burgers comes great responsibility"</p>
+<a href="#menu-section" class="bg-yellow-300 text-blue-800 px-6 py-3 rounded-full font-bold hover:bg-yellow-400">Explore Menu</a>
+</div>
+</section>
+
+<section id="features" class="py-16 bg-white">
+<div class="container mx-auto px-6">
+<h3 class="text-3xl text-center font-bold mb-10 text-blue-700">Super Powers</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+<div class="p-6 border border-blue-200 rounded-lg hover:shadow-lg">
+<h4 class="text-xl font-bold mb-2 text-blue-600">Super Strength</h4>
+<p>Our burgers pack a protein punch that'll make you feel invincible.</p>
+</div>
+<div class="p-6 border border-blue-200 rounded-lg hover:shadow-lg">
+<h4 class="text-xl font-bold mb-2 text-blue-600">Lightning Speed</h4>
+<p>Faster than a speeding bullet - our service is quicker than flash!</p>
+</div>
+<div class="p-6 border border-blue-200 rounded-lg hover:shadow-lg">
+<h4 class="text-xl font-bold mb-2 text-blue-600">X-Ray Vision</h4>
+<p>We see right to the heart of what makes a perfect burger.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="menu-section" class="py-16 bg-blue-100">
+<div class="container mx-auto px-6">
+<h3 class="text-3xl text-center font-bold mb-10 text-blue-700">Heroic Burgers</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<img src="https://media.istockphoto.com/id/520410807/photo/cheeseburger.jpg?s=612x612&w=0&k=20&c=fG_OrCzR5HkJGI8RXBk76NwxxTasMb1qpTVlEM0oyg4=" alt="Captain America Burger" class="w-full h-56 object-cover">
+<div class="p-4">
+  <h4 class="text-xl font-bold text-blue-600">Captain America Burger</h4>
+  <p>Red, white and blue - a patriotic powerhouse of flavor.</p>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<img src="https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/1:1/w_600,h_600,c_limit/Smashburger-recipe-120219.jpg" alt="Iron Man Burger" class="w-full h-56 object-cover">
+<div class="p-4">
+  <h4 class="text-xl font-bold text-blue-600">Iron Man Burger</h4>
+  <p>High-tech flavors with an arc reactor of cheesy goodness.</p>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<img src="https://media.istockphoto.com/id/520410807/photo/cheeseburger.jpg?s=612x612&w=0&k=20&c=fG_OrCzR5HkJGI8RXBk76NwxxTasMb1qpTVlEM0oyg4=" alt="Black Panther Burger" class="w-full h-56 object-cover">
+<div class="p-4">
+  <h4 class="text-xl font-bold text-blue-600">Black Panther Burger</h4>
+  <p>Wakanda-inspired spices with vibranium-level taste.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="reviews" class="py-16 bg-white">
+<div class="container mx-auto px-6">
+<h3 class="text-3xl text-center font-bold mb-10 text-blue-700">Hero Testimonials</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="bg-blue-50 p-6 rounded-lg shadow-md">
+<p class="mb-4">"These burgers gave me the strength to lift Mjolnir! Well, almost..."</p>
+<span class="text-blue-600 font-semibold">- Thor, God of Thunder</span>
+</div>
+<div class="bg-blue-50 p-6 rounded-lg shadow-md">
+<p class="mb-4">"I've traveled through 14 million futures - this burger is in all the good ones."</p>
+<span class="text-blue-600 font-semibold">- Doctor Strange, Master of the Mystic Arts</span>
+</div>
+</div>
+</div>
+</section>
+
+<footer id="contact" class="bg-blue-800 text-white text-center py-8">
+<div class="container mx-auto px-6">
+<p class="text-lg font-semibold">© 2025 SuperHero Burgers. All rights reserved.</p>
+<p class="italic mt-2 text-yellow-300">"Avengers... assemble your appetite!"</p>
+</div>
+</footer>
+
+<script>
+const menuBtn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
+const mobileMenu = document.getElementById('mobile-menu');
+
+menuBtn.addEventListener('click', () => {
+mobileMenu.classList.toggle('hidden');
+});
+</script>
+
+</body>
+</html>
